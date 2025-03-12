@@ -18,23 +18,3 @@ notebooks/ → Códigos e gráficos gerados durante a análise.
 scripts/ → Funções utilizadas para manipulação de dados e criação de tabelas no banco.
 configs.py → Arquivo de configuração para gerenciamento de caminhos de módulos.
 main.py → Arquivo principal que executa o código, realizando as consultas e gerando as visualizações.
-Como executar
-Clone o repositório:
-
-bash
-Copiar
-Editar
-git clone https://github.com/gfill99/inadimplentes
-Instale as dependências:
-
-bash
-Copiar
-Editar
-pip install -r requirements.txt
-Execute o código principal (main.py):
-
-bash
-Copiar
-Editar
-python main.py
-Acesse os resultados das análises no console ou visualize os gráficos gerados.
