@@ -1,5 +1,6 @@
 import duckdb
 
+# Função responsável por criar as tabelas do banco de dados, caso não existam
 def create_database():
     sql_script = """
     -- Criando as tabelas do projeto de análise de crédito
@@ -40,12 +41,13 @@ def create_database():
     """
 
     print("Esquemas e tabelas criados com sucesso!")
-    return sql_script
+    return sql_script # Retorna o script SQL gerado para criação das tabelas
 
-#Função que recebe um INSERT de uma tabela criada
+# Função que recebe o nome de uma query e retorna o conteúdo do arquivo .sql correspondente
 def ler_query(query_name):
+    # Abre o arquivo .sql com o nome especificado em 'query_name' na pasta 'database'
     with open(f'../database/{query_name}.sql', "r", encoding="utf-8") as file:
-        sql_text = file.read()
-        return sql_text
+        sql_text = file.read() # Lê o conteúdo do arquivo
+        return sql_text  # Retorna o conteúdo do arquivo (a query SQL)
     
     
